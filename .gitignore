@@ -30,3 +30,26 @@
 *.exe
 *.out
 *.app
+*.msi
+
+# Visual Studio/ output&build dirs
+.vscode/
+.vs/
+out/
+build/
+/lib
+/bin
+/battleships-build
+
+
+
+# Conan files
+conan.lock
+conanbuildinfo.cmake
+conanbuildinfo.txt
+conaninfo.txt
+graph_info.json
+conan_imports_manifest.txt
+
+#conan search products
+file.html
