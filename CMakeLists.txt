@@ -19,9 +19,13 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${OUTPUT_DIR})
 set(CMAKE_EXECUTABLE_OUTPUT_DIRECTORY ${OUTPUT_DIR})
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${OUTPUT_DIR})
 
+set(CMAKE_CXX_STANDARD 17)
+
 #add the necessary targets
 
-find_package(Boost REQUIRED)
+set(Boost_USE_STATIC_LIBS TRUE)
+
+find_package(Boost COMPONENTS filesystem system REQUIRED)
 
 add_subdirectory(src)
 
