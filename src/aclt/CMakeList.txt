@@ -1,0 +1,8 @@
+
+add_executable(aclt
+	aclt/main.cpp
+)
+
+target_link_libraries(aclt
+	Boost::boost
+)
