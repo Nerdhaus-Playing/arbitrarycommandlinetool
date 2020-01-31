@@ -7,4 +7,4 @@ main.cpp
 )
 
 
-set_default_target_options(sfml_menu_demo)
+set_default_target_options(demo)

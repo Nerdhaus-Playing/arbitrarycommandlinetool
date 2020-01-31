@@ -45,5 +45,5 @@ class ArbitraryCommandLineToolConan(ConanFile):
       cmake.configure()
       cmake.install()
 
-   def deploy(self)
+   def deploy(self):
       self.copy("*")

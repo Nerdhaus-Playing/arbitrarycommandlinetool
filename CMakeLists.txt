@@ -21,11 +21,15 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${OUTPUT_DIR})
 
 #add the necessary targets
 
+find_package(Boost REQUIRED)
+
 add_executable(aclt
 	src/main.cpp
 )
 
-
+target_link_libraries(aclt
+	Boost::boost
+)
 
 if(${BUILD_WITH_DEMO})
 	message(STATUS "Building with demo")
