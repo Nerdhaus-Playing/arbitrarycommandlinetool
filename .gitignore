@@ -36,7 +36,7 @@
 .vscode/
 .vs/
 out/
-build/
+build*
 /lib
 /bin
 /battleships-build
